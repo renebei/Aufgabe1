@@ -4,6 +4,10 @@ import java.util.Collection;
 
 public class Orchester {
     private String bezeichnung;
+
+
+
+
     private String audioDateiKonzert;
     private Collection<MusikerIn> musikerinnen;
 
