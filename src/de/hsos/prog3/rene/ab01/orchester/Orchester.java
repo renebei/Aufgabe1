@@ -22,7 +22,4 @@ public class Orchester {
         return musikerinnen;
     }
 
-    public int test(int a, int b, int c) {
-        return a + b + c;
-    }
 }
