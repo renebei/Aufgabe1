@@ -13,10 +13,16 @@ public class Orchester {
     public void addDirigentIn(DirigentIn dirigent) {
 
     }
+
     public void addMusikerIn(MusikerIn musiker) {
 
     }
-    public Collection<MusikerIn> getMusikerinnen () {
+
+    public Collection<MusikerIn> getMusikerinnen() {
         return musikerinnen;
+    }
+
+    public int test(int a, int b, int c) {
+        return a + b + c;
     }
 }
