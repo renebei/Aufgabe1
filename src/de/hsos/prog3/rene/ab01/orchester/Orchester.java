@@ -14,12 +14,12 @@ public class Orchester {
     private DirigentIn dirigent;
     private Verhalten verhalten;
 
-    Orchester(String bezeichnung, String audioDateiKonzert) {
+    public Orchester(String bezeichnung, String audioDateiKonzert) {
         this.bezeichnung = bezeichnung;
         this.audioDateiKonzert = audioDateiKonzert;
     }
 
-    public void addDirigentIn(DirigentIn dirigent) {
+    public void setDirigentIn(DirigentIn dirigent) {
         this.dirigent = dirigent;
     }
 
@@ -31,11 +31,17 @@ public class Orchester {
         return musikerinnen;
     }
 
-    public void proben() {}
+    public void proben() {
+        this.verhalten = new Probe();
+    }
 
-    public void spielen() {}
+    public void spielen() {
+        this.verhalten = new Konzert();
+    }
 
-    public void auftreten() {}
+    public void auftreten(Orchester or) {
+        verhalten.spielen(or);
+    }
 
     public URL getAudiodateiKonzert() throws MalformedURLException {
         return new URL(audioDateiKonzert) ;

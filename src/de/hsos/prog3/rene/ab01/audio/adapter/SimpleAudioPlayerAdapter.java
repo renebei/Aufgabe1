@@ -8,6 +8,7 @@ import java.net.URL;
 
 public class SimpleAudioPlayerAdapter implements StdAudioPlayer {
 
+
     @Override
     public void einmaligAbspielen(URL url) throws IOException {
         SimpleAudioPlayer player = new SimpleAudioPlayer(url);
