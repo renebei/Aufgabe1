@@ -25,8 +25,7 @@ public class App {
         orchester.addMusikerIn(Lia);
 
         orchester.proben();
-
-        orchester.auftreten(orchester);
+        orchester.spielen();
 
     }
 }

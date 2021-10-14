@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class Orchester {
 
-    private String bezeichnung;
+    private final String bezeichnung;
     private String audioDateiKonzert;
     private Set<MusikerIn> musikerinnen = new HashSet<>();
     private DirigentIn dirigent;
@@ -35,18 +35,18 @@ public class Orchester {
         this.verhalten = new Probe();
     }
 
-    public void spielen() {
+    public void auftreten() {
         this.verhalten = new Konzert();
     }
 
-    public void auftreten(Orchester or) {
-        verhalten.spielen(or);
+    public void spielen() {
+        verhalten.spielen(this);
     }
+
 
     public URL getAudiodateiKonzert() throws MalformedURLException {
-        return new URL(audioDateiKonzert) ;
+        return new URL(audioDateiKonzert);
     }
-
 
 
 }
