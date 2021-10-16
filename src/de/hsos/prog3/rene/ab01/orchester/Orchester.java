@@ -1,8 +1,6 @@
 package de.hsos.prog3.rene.ab01.orchester;
 
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 

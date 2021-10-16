@@ -6,6 +6,8 @@
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/docs/SimpleAudioPlayerDoc.zip!/SimpleAudioPlayer" />
     </JAVADOC>
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/SimpleAudioPlayer.jar!/" />
+    </SOURCES>
   </library>
 </component>
