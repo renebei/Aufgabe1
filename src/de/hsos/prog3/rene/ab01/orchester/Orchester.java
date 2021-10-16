@@ -27,7 +27,7 @@ public class Orchester {
         musikerinnen.add(musiker);
     }
 
-    public Collection<MusikerIn> getMusikerinnen() {
+    public Set<MusikerIn> getMusikerinnen() {
         return musikerinnen;
     }
 
@@ -43,9 +43,9 @@ public class Orchester {
         verhalten.spielen(this);
     }
 
+    public URL getAudiodateiKonzert() {
+        return Orchester.class.getResource(audioDateiKonzert);
 
-    public URL getAudiodateiKonzert() throws MalformedURLException {
-        return new URL(audioDateiKonzert);
     }
 
 

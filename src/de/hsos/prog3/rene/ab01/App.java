@@ -10,8 +10,8 @@ import java.io.IOException;
 public class App {
 
     public static void main(String[] args) {
-        String audioDatei = "All_Together.wav";
-        Orchester orchester = new Orchester("Titty Twister", audioDatei);
+        String audioDatei = "/All_Together.wav";
+        Orchester orchester = new Orchester("Musikmacherei", audioDatei);
 
         DirigentIn rené = new DirigentIn("René");
         orchester.setDirigentIn(rené);
@@ -24,7 +24,13 @@ public class App {
         orchester.addMusikerIn(Gaby);
         orchester.addMusikerIn(Lia);
 
+
+        System.out.println("Proben");
         orchester.proben();
+        orchester.spielen();
+
+        System.out.println("Konzertstart");
+        orchester.auftreten();
         orchester.spielen();
 
     }
