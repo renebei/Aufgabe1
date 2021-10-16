@@ -11,27 +11,29 @@ public class SimpleAudioPlayerAdapter implements StdAudioPlayer {
 
     @Override
     public void einmaligAbspielen(URL url) throws IOException {
-        SimpleAudioPlayer player = new SimpleAudioPlayer(url);
-        player.setDebug(false);
-        player.verboseLogging(true);
-        player.play(0);
+        play = new SimpleAudioPlayer(url);
+        play.setDebug(false);
+        play.verboseLogging(true);
+        play.play(0);
     }
 
     @Override
     public void wiederholtAbspielen(URL url, int wiederholungen) throws IOException {
-        SimpleAudioPlayer player = new SimpleAudioPlayer(url);
-        player.setDebug(false);
-        player.verboseLogging(true);
-        player.play(wiederholungen);
+        play = new SimpleAudioPlayer(url);
+        play.setDebug(false);
+        play.verboseLogging(true);
+        play.play(wiederholungen);
     }
 
     @Override
     public void tonAus() throws IOException {
-
+        play.setDebug(true);
+        play.verboseLogging(true);
     }
 
     @Override
     public void tonAn() {
-
+        play.setDebug(false);
+        play.verboseLogging(true);
     }
 }

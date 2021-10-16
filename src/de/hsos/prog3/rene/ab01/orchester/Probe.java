@@ -10,6 +10,7 @@ public class Probe implements Verhalten {
         SimpleAudioPlayerAdapter p = new SimpleAudioPlayerAdapter();
         for (MusikerIn m : orchester.getMusikerinnen()) {
             try {
+                p.tonAus();
                 p.einmaligAbspielen(Probe.class.getResource(m.instrument.getAudiodatei()));
             } catch (IOException e) {
                 System.err.println("Probe wird abgebrochen");

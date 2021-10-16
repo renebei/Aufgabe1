@@ -5,8 +5,6 @@ import de.hsos.prog3.rene.ab01.orchester.Instrument;
 import de.hsos.prog3.rene.ab01.orchester.MusikerIn;
 import de.hsos.prog3.rene.ab01.orchester.Orchester;
 
-import java.io.IOException;
-
 public class App {
 
     public static void main(String[] args) {
