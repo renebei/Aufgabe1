@@ -8,8 +8,8 @@ public class Probe implements Verhalten {
     @Override
     public void spielen(Orchester orchester) {
         SimpleAudioPlayerAdapter p = new SimpleAudioPlayerAdapter();
+        p.tonAus();
         for (MusikerIn m : orchester.getMusikerinnen()) {
-            p.tonAus();
             try {
                 p.einmaligAbspielen(Probe.class.getResource(m.instrument.getAudiodatei()));
             } catch (IOException e) {
