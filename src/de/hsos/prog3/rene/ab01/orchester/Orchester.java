@@ -43,8 +43,5 @@ public class Orchester {
 
     public URL getAudiodateiKonzert() {
         return Orchester.class.getResource(audioDateiKonzert);
-
     }
-
-
 }

@@ -11,7 +11,7 @@ public class HalloNachbar {
         Nachbar c = new Nachbar("Megan", "Diekmann");
         Nachbar d = new Nachbar("Jessica", "Pankov");
 
-        Set<Nachbar> nachbarn = new HashSet<Nachbar>();
+        Set<Nachbar> nachbarn = new HashSet<>();
         nachbarn.add(a);
         nachbarn.add(b);
         nachbarn.add(c);
