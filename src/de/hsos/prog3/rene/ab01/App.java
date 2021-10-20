@@ -8,7 +8,8 @@ import de.hsos.prog3.rene.ab01.orchester.Orchester;
 public class App {
 
     public static void main(String[] args) {
-        String audioDatei = "/All_Together.wav";
+        //String audioDatei = "/All_Together.wav";
+        String audioDatei = "/Mystery_Lady.wav";
         Orchester orchester = new Orchester("Musikmacherei", audioDatei);
 
         DirigentIn rené = new DirigentIn("René");
