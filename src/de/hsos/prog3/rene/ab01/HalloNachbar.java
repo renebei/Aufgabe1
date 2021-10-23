@@ -18,7 +18,6 @@ public class HalloNachbar {
         nachbarn.add(d);
 
     }
-
     static class Nachbar {
         private String Name;
         private String Vorname;

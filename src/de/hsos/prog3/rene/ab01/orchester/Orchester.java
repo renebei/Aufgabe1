@@ -48,6 +48,12 @@ public class Orchester {
         return Orchester.class.getResource(audioDateiKonzert);
     }
 
+    /*1.5
+    - Finde, dass dieser Ansatz an dieser Stelle keine gute Option ist.
+    - Sehr vollgepackte Klasse. Verzweigungen von Klassen und Interface hin und her.
+    - Verhalten ist erweiterbar. Bei diesem Ansatz wäre ein eigenes Package auch eine Option
+     */
+
     private class Konzert implements Verhalten {
         @Override
         public void spielen(Orchester orchester) {
