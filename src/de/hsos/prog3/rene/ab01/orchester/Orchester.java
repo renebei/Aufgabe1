@@ -73,7 +73,7 @@ public class Orchester {
             p.tonAus();
             for (MusikerIn m : orchester.getMusikerinnen()) {
                 try {
-                    p.einmaligAbspielen(Probe.class.getResource(m.instrument.getAudiodatei()));
+                    p.einmaligAbspielen(Probe.class.getResource(m.getInstrument().getAudiodatei()));
                 } catch (IOException e) {
                     System.err.println("Probe wird abgebrochen");
                 }
