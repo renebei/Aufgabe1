@@ -4,14 +4,14 @@ import de.hsos.prog3.rene.ab01.audio.adapter.SimpleAudioPlayerAdapter;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class Orchester {
 
     private final String bezeichnung;
     private String audioDateiKonzert;
-    private Set<MusikerIn> musikerinnen = new HashSet<>();
+    private Set<MusikerIn> musikerinnen = new LinkedHashSet<>();
     private DirigentIn dirigent;
     private Verhalten verhalten;
 

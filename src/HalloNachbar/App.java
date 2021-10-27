@@ -1,13 +1,14 @@
 package HalloNachbar;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class App {
 
     public static void main(String[] args) {
         String answer = "y";
-        HashSet<Nachbar> nachbarn = new HashSet<Nachbar>();
+        Set<Nachbar> nachbarn = new LinkedHashSet<Nachbar>();
         Scanner scan = new Scanner(System.in);
 
         while (answer.equals("y") || nachbarn.size() < 4) {
